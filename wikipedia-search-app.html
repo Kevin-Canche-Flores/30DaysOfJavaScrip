@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/wikipedia-search-app.css">
+
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+
+  <title>Wikipedia Search App</title>
+</head>
+
+<body class=""> 
+ 
+  <main>
+    <!-- btn dark mode -->
+    <div class="nav">
+      <button class="darkModeSwitch js-switch" title="dark mode">  
+        <span><i class="ai-sun"></i></span>    
+        <span><i class="ai-moon"></i></span>
+      </button>
+    </div>
+  
+    <header class="header">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png"
+        alt="Wikipedia Logo" class="logo" />
+      <form class="search-form js-search-form">
+        <input type="search" name="btn-search" id="btn-search" class="search-input js-search-input"
+          placeholder="Type a keyword and press Enter to search" autofocus>
+      </form>
+    </header>
+    <!-- spinner de carga -->
+    <div class="loading-indicator">
+      <div class="sk-circle hidden js-spinner">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <section class="search-results js-search-results"></section>
+
+  </main>
+
+  <script src="js/wikipedia-search-app.js"></script>
+</body>
+
+</html>
